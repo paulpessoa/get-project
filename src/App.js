@@ -1,5 +1,8 @@
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-
+import {BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
+import Home from './components/pages/Home'
+import Company from './components/pages/Company'
+import NewProject from './components/pages/NewProject'
+import Contact from './components/pages/Contact';
 
 
 
@@ -9,23 +12,17 @@ function App() {
   return (
     <Router>
       <ul>
-        <li>home</li>
-        <li>contato</li>
+      <li><Link to="/">Home</Link></li>
+      <li><Link to="/contact">Contact</Link></li>
+      <li><Link to="/company">Company</Link></li>
+      <li><Link to="/newproject">NewProject</Link></li>
+        
       </ul>
       <Routes>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route exact path="/company">
-          <Company />
-        </Route>
-        <Route exact path="/contact">
-          <Contact />
-        </Route>
-        <Route exact path="/newproject">
-          <NewProject />
-        </Route>
-
+        <Route exact  path="/" element={<Home />} />
+        <Route exact  path="/company" element={<Company />} />
+        <Route exact  path="/contact" element={<Contact />} />
+        <Route exact  path="/newproject" element={<NewProject />} />
       </Routes>
       <p>footer</p>
     </Router>

@@ -1,8 +1,34 @@
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+
+
+
+
+
+
 function App() {
   return (
-    <div className="App">
-      <h1>Get Project</h1>
-    </div>
+    <Router>
+      <ul>
+        <li>home</li>
+        <li>contato</li>
+      </ul>
+      <Routes>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route exact path="/company">
+          <Company />
+        </Route>
+        <Route exact path="/contact">
+          <Contact />
+        </Route>
+        <Route exact path="/newproject">
+          <NewProject />
+        </Route>
+
+      </Routes>
+      <p>footer</p>
+    </Router>
   );
 }
 

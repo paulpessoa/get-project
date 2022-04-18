@@ -4,24 +4,24 @@ import Home from './components/pages/Home'
 import Company from './components/pages/Company'
 import NewProject from './components/pages/NewProject'
 import Contact from './components/pages/Contact';
-
+import Container from './components/layout/Container';
 
 function App() {
   return (
     <Router>
-      <ul>
-      <li><Link to="/">Home</Link></li>
-      <li><Link to="/contact">Contact</Link></li>
-      <li><Link to="/company">Company</Link></li>
-      <li><Link to="/newproject">NewProject</Link></li>
-        
-      </ul>
+        <Link to="/">Home</Link>
+        <Link to="/contact">Contact</Link>
+        <Link to="/company">Company</Link>
+        <Link to="/newproject">NewProject</Link>
+
+      <Container>
       <Routes>
-        <Route exact  path="/" element={<Home />} />
-        <Route exact  path="/company" element={<Company />} />
-        <Route exact  path="/contact" element={<Contact />} />
-        <Route exact  path="/newproject" element={<NewProject />} />
+          <Route exact  path= "/" element={<Home />} />
+          <Route exact  path="/company" element={<Company />} />
+          <Route exact  path="/contact" element={<Contact />} />
+          <Route exact  path="/newproject" element={<NewProject />} />
       </Routes>
+      </Container>
       <p>footer</p>
     </Router>
   );

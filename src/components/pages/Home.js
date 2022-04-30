@@ -4,7 +4,7 @@ import styles from "./Home.module.css";
 
 function Home () {
     return (
-        <div className={styles.beleuza}>
+        <div className={styles.home_container}>
             <h1>Bem vindo ao <span>GetProject</span></h1>
             <p>Comece a gerencias os seus projetos agora mesmo</p>
             <a href='/'>Criar Projeto</a>

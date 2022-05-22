@@ -3,9 +3,12 @@
     color: #fff;
     padding: 0.7em 1.2em;
     text-decoration: none;
-    transition: 0.5s;
+    transition: 0.3s;
     cursor: pointer;
     border: none;
+    border-radius: 6px;
+    padding: 0.8em 1.5em;
+    font-size: 16px;
 }
 
 .btn:hover {

@@ -19,35 +19,6 @@
       "cost": 0,
       "services": [],
       "id": 2
-    },
-    {
-      "category": {
-        "id": "3",
-        "name": "Design"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 3
-    },
-    {
-      "cost": 0,
-      "services": [],
-      "id": 4
-    },
-    {
-      "cost": 0,
-      "services": [],
-      "id": 5
-    },
-    {
-      "cost": 0,
-      "services": [],
-      "id": 6
-    },
-    {
-      "cost": 0,
-      "services": [],
-      "id": 7
     }
   ],
   "categories": [

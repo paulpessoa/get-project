@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Footer.module.css"
 import {FaGithub, FaLinkedin} from 'react-icons/fa'
-import logo from "../../img/getprojectlogo.png";
+
 function Footer () {
     return (
         <footer className={styles.footer}>

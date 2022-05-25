@@ -10,15 +10,6 @@
       "cost": 0,
       "services": [],
       "id": 1
-    },
-    {
-      "category": {
-        "id": "4",
-        "name": "Planejamento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 2
     }
   ],
   "categories": [

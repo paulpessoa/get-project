@@ -6,7 +6,7 @@ function Home () {
     return (
         <div className={styles.home_container}>
             <h1>Bem vindo {'{user.name}'}</h1>
-            <p>Comece a gerencias os seus projetos agora mesmo</p>
+            <p>Comece a gerencias os seus projetos</p>
             <LinkButton to="/newproject" text="Criar Projeto"/>  
         </div>
     )

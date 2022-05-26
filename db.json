@@ -20,10 +20,10 @@
       },
       "cost": 0,
       "services": [],
-      "id": 1
+      "id": 2
     },
     {
-      "name": "Formulário para MKT Digital",
+      "name": "Formulário Dinâmico",
       "budget": "450.00",
       "category": {
         "id": "3",
@@ -31,46 +31,46 @@
       },
       "cost": 0,
       "services": [],
-      "id": 2
+      "id": 3
     },
     {
       "name": "Ecommerce Ecologico",
       "budget": "2500",
       "category": {
-        "id": "2",
+        "id": "4",
         "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 3
-    },
-    {
-      "name": "Upgrade nas Máquinas",
-      "budget": "6500",
-      "category": {
-        "id": "1",
-        "name": "Infra"
       },
       "cost": 0,
       "services": [],
       "id": 4
     },
     {
-      "name": "Site Institucional",
-      "budget": "1700",
+      "name": "Upgrade nas Máquinas",
+      "budget": "6500",
       "category": {
-        "id": "4",
-        "name": "Planejamento"
+        "id": "5",
+        "name": "Infra"
       },
       "cost": 0,
       "services": [],
       "id": 5
+    },
+    {
+      "name": "Site Institucional",
+      "budget": "1700",
+      "category": {
+        "id": "6",
+        "name": "Planejamento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 6
     }
   ],
   "categories": [
     {
       "id": 1,
-      "name": "Infra"
+      "name": "Infraestrutura"
     },
     {
       "id": 2,
@@ -78,7 +78,7 @@
     },
     {
       "id": 3,
-      "name": "Design"
+      "name": "UX/UI Design"
     },
     {
       "id": 4,

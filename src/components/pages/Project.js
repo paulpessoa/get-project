@@ -32,6 +32,7 @@ function Project () {
 
 
     function editPost(project) {
+        setMessage('')
         console.log(project)
         //budget validation
         if(project.budget < project.cost) {

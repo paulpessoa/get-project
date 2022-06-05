@@ -3,7 +3,7 @@ import {useParams} from 'react-router-dom'
 import {useState, useEffect} from 'react'
 import Loading from '../layout/Loading'
 import Container from '../layout/Container'
-
+import ProjectForm from '../project/ProjectForm'
 function Project () {
     const { id } = useParams()
     const [project, setProject] = useState([])
@@ -55,7 +55,7 @@ function Project () {
                     </div>
                 ) : (
                     <div className={styles.project_info}>
-                        <p>detalhes do projeto</p>
+                        <ProjectForm />
                     </div>
                 )}
                 <form>

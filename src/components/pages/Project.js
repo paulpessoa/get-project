@@ -5,11 +5,12 @@ import Loading from '../layout/Loading'
 import Container from '../layout/Container'
 import ProjectForm from '../project/ProjectForm'
 import Message from '../layout/Message'
-import { set } from 'lodash'
+
 function Project () {
     const { id } = useParams()
     const [project, setProject] = useState([])
     const [showProjectForm, setShowProjectForm] = useState(false)
+    const [showServiceForm, setShowServiceForm] = useState(false)
     const [message, setMessage] = useState()
     const [type, setType] = useState()
 
@@ -65,6 +66,10 @@ function Project () {
     function toggleProjectForm() {
         setShowProjectForm(!showProjectForm)
     }
+  
+    function toggleServiceForm() {
+        setShowServiceForm(!showProjectForm)
+    }
 
     return   (
     <>
@@ -99,6 +104,19 @@ function Project () {
 
                 </form>
             </div>
+            <div className={styles.service_form_container}>
+                    <h2>Adicione um serviço</h2>
+                    <button className={styles.btn} onClick={toggleServiceForm}>
+                        {!showServiceForm ? `Adicionar serviço`: 'Cancelar'}
+                    </button>
+                    <div className={styles.project_info}>
+                        {showServiceForm && <div>formulario de servico</div>}
+                    </div>
+            </div>
+            <h2>Serviços</h2>
+            <Container customClass="start">
+                    <p>itens servico</p>
+            </Container>
         </Container>
     </div>
     

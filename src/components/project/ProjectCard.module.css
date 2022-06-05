@@ -89,6 +89,9 @@
     border-radius: 6px;
     transition: 0.4s;
 }
+.project_card_actions button {
+    padding: 0.72em 1em;
+}
 
 .project_card_actions svg {
     margin-right: .5em;

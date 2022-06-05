@@ -97,14 +97,14 @@
       },
       "cost": 0,
       "services": [],
-      "id":9
+      "id": 9
     },
     {
-      "name": "Outra coisa",
-      "budget": "1700",
+      "name": "sadasdasd",
+      "budget": "3242343",
       "category": {
-        "id": "6",
-        "name": "Planejamento"
+        "id": "300",
+        "name": "UX/UI Design"
       },
       "cost": 0,
       "services": [],

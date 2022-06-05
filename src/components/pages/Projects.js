@@ -25,19 +25,33 @@ function Projects () {
             fetch('http://localhost:5000/projects', {
                 method: 'GET',
                 header: {
-                    'Content-tType': 'application/json',
+                    'Content-Type': 'application/json',
                 },
             })
             .then((resp) => resp.json())
             .then((data) => {
-                console.log(data)
                 setProjects(data)
                 setRemoveLoading(true)
             })
             .catch((err) => console.log(err))
-        }, 2500)
+        }, 1500)
     }, [])
 
+
+    function removeProject(id){
+        fetch(`http://localhost:5000/projects/${id}`, {
+            method: 'DELETE',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+        })
+        .then(resp => resp.json())
+        .then((data) => {
+            setProjects(projects.filter((project) => project.id !== id))
+            // message
+        })
+        .catch(err => console.log('Aqui esta o erro',err))
+    }
 
     return (
         <div className={styles.project_container}>
@@ -55,8 +69,9 @@ function Projects () {
                 id={project.id}
                 name={project.name}
                 budget={project.budget}
-                key={project.category.id}
                 category={project.category.name}               
+                key={project.category.id}
+                handleRemove={removeProject}
                 />)}
                 {!removeLoading && <Loading />}     
                 {removeLoading && projects.length === 0 && (

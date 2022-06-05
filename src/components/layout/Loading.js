@@ -5,6 +5,7 @@ function Loading () {
     return (
         <div className={styles.loader_container}>
            <img className={styles.loader} src={loading} alt="Loading"/>
+           <p>Carregando... </p>
         </div>
     )
 }

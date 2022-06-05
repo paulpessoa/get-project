@@ -12,6 +12,7 @@ import ProjectCard from "../project/ProjectCard";
 function Projects () {
     const [projects, setProjects] = useState ([])
     const [removeLoading, setRemoveLoading] = useState(false)
+    const [projectMessage, setProjectMessage] = useState('')
     const location = useLocation()
     let message = ''
     if(location.state) {
@@ -48,6 +49,7 @@ function Projects () {
         .then(resp => resp.json())
         .then((data) => {
             setProjects(projects.filter((project) => project.id !== id))
+            setProjectMessage('Projeto removido com sucesso!')
             // message
         })
         .catch(err => console.log('Aqui esta o erro',err))
@@ -60,6 +62,7 @@ function Projects () {
                 <LinkButton to="/newproject" text="Criar Projeto"/>  
             </div>
             {message && <Message type="success" msg={message} />}
+            {projectMessage && <Message type="success" msg={projectMessage} />}
            
            
             <Container customClass="start"> 
@@ -76,9 +79,8 @@ function Projects () {
                 {!removeLoading && <Loading />}     
                 {removeLoading && projects.length === 0 && (
                     <p>Não há projetos cadastrados!</p>
-                )
-                
-                }       
+                )}       
+                    
             </Container>
         
         </div>

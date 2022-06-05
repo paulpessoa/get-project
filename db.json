@@ -98,17 +98,6 @@
       "cost": 0,
       "services": [],
       "id": 603
-    },
-    {
-      "name": "xvdcvxcv",
-      "budget": "3423423424",
-      "category": {
-        "id": "400",
-        "name": "Planejamento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 604
     }
   ],
   "categories": [

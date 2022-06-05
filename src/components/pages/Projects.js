@@ -58,7 +58,12 @@ function Projects () {
                 key={project.category.id}
                 category={project.category.name}               
                 />)}
-                {!removeLoading && <Loading />}            
+                {!removeLoading && <Loading />}     
+                {removeLoading && projects.length === 0 && (
+                    <p>Não há projetos cadastrados!</p>
+                )
+                
+                }       
             </Container>
         
         </div>

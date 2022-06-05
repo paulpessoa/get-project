@@ -2,7 +2,7 @@
 
 <a href="https://get-project.vercel.app/" target="_blank"><img src="./src/img/getproject-print.png" alt="Get Project Page Preview"/></a>
 
-## Original Project - Matheus Battisti
+## Original Project - Matheus Battisti - Youtuber
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

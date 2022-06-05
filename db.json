@@ -26,8 +26,8 @@
       "name": "Formulário Dinâmico",
       "budget": "450.00",
       "category": {
-        "id": "3",
-        "name": "Design"
+        "id": "200",
+        "name": "Desenvolvimento"
       },
       "cost": 0,
       "services": [],
@@ -98,6 +98,17 @@
       "cost": 0,
       "services": [],
       "id": 9
+    },
+    {
+      "category": {
+        "id": "200",
+        "name": "Desenvolvimento"
+      },
+      "name": "Corridindo nome",
+      "budget": "324345",
+      "cost": 0,
+      "services": [],
+      "id": 10
     }
   ],
   "categories": [

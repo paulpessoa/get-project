@@ -66,7 +66,7 @@ function Project () {
     function createService (project) {
         
         // last service
-        const lastService = project.services[project.services.lenght - 1]
+        const lastService = project.services[project.services.length - 1]
 
         lastService.id = uuidv4()
 

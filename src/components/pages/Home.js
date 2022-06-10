@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Home.module.css";
 import LinkButton from "../layout/LinkButton";
 
+
 function Home () {
     return (
         <div className={styles.home_container}>

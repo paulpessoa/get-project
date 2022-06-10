@@ -7,8 +7,15 @@
         "id": "200",
         "name": "Desenvolvimento"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 777,
+      "services": [
+        {
+          "name": "novo servico novo servico novo servico novo servico",
+          "description": "novo servico novo servico novo servico novo servico novo servico",
+          "cost": "777",
+          "id": "dc448e72-47e9-4dc5-8b86-1ec449b0de6b"
+        }
+      ],
       "id": 1
     },
     {
@@ -98,17 +105,6 @@
       "cost": 0,
       "services": [],
       "id": 9
-    },
-    {
-      "category": {
-        "id": "200",
-        "name": "Desenvolvimento"
-      },
-      "name": "Corridindo nome",
-      "budget": "324345",
-      "cost": 0,
-      "services": [],
-      "id": 10
     }
   ],
   "categories": [

@@ -7,6 +7,7 @@ import ProjectForm from '../project/ProjectForm'
 import Message from '../layout/Message'
 import ServiceForm from '../service/ServiceForm'
 import {parse, v4 as uuidv4 } from 'uuid'
+import { method } from 'lodash'
 
 function Project () {
     const { id } = useParams()
@@ -64,7 +65,7 @@ function Project () {
 
     }
     function createService (project) {
-        
+        setMessage('')
         // last service
         const lastService = project.services[project.services.length - 1]
 
@@ -75,13 +76,29 @@ function Project () {
 
         // maximum value validation
         if(newCost > parseFloat(project.budget)) {
-            setMessage('orçamento ultrapassado, verifique o valor do serviço')
+            setMessage('Orçamento ultrapassado, verifique o valor do serviço')
             setType('error')
             project.services.pop()
             return false
         }
 
-    }
+        //add service cost to project total cost
+        project.cost = newCost
+
+        fetch(`http://localhost:5000/projects/${project.id}`, {
+            method: 'PATCH',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(project)
+        })
+        .then((resp) => resp.json())
+        .then((data) => {
+            //exibir os servicos
+            console.log(data)
+        })
+        .catch(err => console.log(err))
+        }
 
     function toggleProjectForm() {
         setShowProjectForm(!showProjectForm)

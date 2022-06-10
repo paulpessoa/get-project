@@ -3,7 +3,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0 auto;
-    justify-content: space-;
+    justify-content: space-around;
     
 }
 .project_card {
@@ -102,8 +102,3 @@
     background-color: #222;
     color: #ffbb33;
 }
-
-
-
-
-

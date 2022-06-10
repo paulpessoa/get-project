@@ -1,6 +1,13 @@
 # Get Project - Application Web
 
-<a href="https://get-project.vercel.app/" target="_blank"><img src="./src/img/getproject-print.png" alt="Get Project Page Preview"/></a>
+<a href="https://get-project.vercel.app/" target="_blank"><img src="./src/img/land0.gif" alt="Get Project Page Preview"/></a>
+
+<a href="https://get-project.vercel.app/" target="_blank"><img src="./src/img/land1.png" alt="Get Project Page Preview"/></a>
+
+<a href="https://get-project.vercel.app/" target="_blank"><img src="./src/img/land2.png" alt="Get Project Page Preview"/></a>
+
+<a href="https://get-project.vercel.app/" target="_blank"><img src="./src/img/land3.png" alt="Get Project Page Preview"/></a>
+
 
 ## Original Project - Matheus Battisti - Youtuber
 

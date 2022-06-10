@@ -25,8 +25,21 @@
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 584,
+      "services": [
+        {
+          "name": "sdfsdf",
+          "cost": "234",
+          "description": "dsf sd",
+          "id": "139feaa5-59d7-4eca-996b-40a3b087569a"
+        },
+        {
+          "name": "novo servico",
+          "cost": "350",
+          "description": "olhaisso",
+          "id": "9a3ba85f-5ea4-4ca8-b12c-8537ca20ea92"
+        }
+      ],
       "id": 2
     },
     {

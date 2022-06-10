@@ -4,8 +4,8 @@ import {BsFillTrashFill} from 'react-icons/bs'
 function ServiceCard({id, name, cost, description, handleRemove}) {
   
     const remove = (e) => {
-        console.log('removeu o projeto')
-        alert('removeu o projeto')
+       e.preventDefault();
+       handleRemove(id, cost)
     }
 
     return (

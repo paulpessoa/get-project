@@ -128,37 +128,13 @@
         "id": "300",
         "name": "UX/UI Design"
       },
-      "cost": 1424,
+      "cost": 123,
       "services": [
         {
-          "name": "Novo servico",
-          "cost": "500",
-          "description": "sei la",
-          "id": "bc022708-f12b-4363-8432-9aed844a1b5b"
-        },
-        {
-          "name": "GRande servico",
-          "cost": "240",
-          "description": "agora vai",
-          "id": "45ffefce-33a5-4189-b12a-71aea80c10c7"
-        },
-        {
-          "name": "GRande servico",
-          "cost": "240",
-          "description": "agora vai",
-          "id": "45ffefce-33a5-4189-b12a-71aea80c10c7"
-        },
-        {
-          "name": "sei la o que",
+          "name": "serv 1",
           "cost": "123",
-          "description": "aqui coloco a descricao que vai aparecer la",
-          "id": "e4f36afc-b142-4bef-9d5f-13d487add000"
-        },
-        {
-          "name": "e agora",
-          "cost": "321",
-          "description": "vamos ver",
-          "id": "305b77f2-6be2-4745-b049-e9bd11ab14c5"
+          "description": "re re re rer",
+          "id": "d0cf4ba3-8055-4268-90cc-36af93d26a85"
         }
       ],
       "id": 9

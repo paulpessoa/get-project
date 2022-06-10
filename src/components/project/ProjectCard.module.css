@@ -3,7 +3,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0 auto;
-    justify-content: space-around;
+    justify-content: space-between;
     
 }
 .project_card {

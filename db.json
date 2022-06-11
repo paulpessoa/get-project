@@ -160,15 +160,8 @@
         "id": "300",
         "name": "UX/UI Design"
       },
-      "cost": 123,
-      "services": [
-        {
-          "name": "serv 1",
-          "cost": "123",
-          "description": "re re re rer",
-          "id": "d0cf4ba3-8055-4268-90cc-36af93d26a85"
-        }
-      ],
+      "cost": 0,
+      "services": [],
       "id": 9
     }
   ],

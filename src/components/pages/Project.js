@@ -6,8 +6,7 @@ import Container from '../layout/Container'
 import ProjectForm from '../project/ProjectForm'
 import Message from '../layout/Message'
 import ServiceForm from '../service/ServiceForm'
-import {parse, v4 as uuidv4 } from 'uuid'
-import { method } from 'lodash'
+import {v4 as uuidv4 } from 'uuid'
 import ServiceCard from '../service/ServiceCard'
 
 function Project () {
@@ -105,26 +104,27 @@ function Project () {
 
     function removeService(id, cost) {
         const servicesUpdated = project.services.filter(
-            (service) => service.id !== id
+            (service) => service.id != id
         )
+        
         const projectUpdated = project
         projectUpdated.services = servicesUpdated
-        projectUpdated.cost = parseFloat(project.cost) - parseFloat(cost)
-    
+        projectUpdated.cost = parseFloat(projectUpdated.cost) - parseFloat(cost)
+
         fetch(`http://localhost:5000/projects/${projectUpdated.id}`, {
             method: 'PATCH',
-            header: {
+            headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(projectUpdated)
         })
-        .then((resp) => resp.json())
+        .then((resp) => resp.json(projectUpdated))
         .then((data) => {
             setProject(projectUpdated)
             setServices(servicesUpdated)
-            setMessage('Serviço removido com sucesso')
+            setMessage('Serviço removido com sucesso1')
         })
-        .catch((err) => console.log(err))
+        .catch(err => console.log(err))
     } 
 
     function toggleProjectForm() {

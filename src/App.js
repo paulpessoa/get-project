@@ -14,6 +14,7 @@ import UserRegister from './components/auth/UserRegister';
 import UserLogin from './components/auth/UserLogin';
 import RecoveryPassword from './components/auth/RecoveryPassword';
 import NewPassword from './components/auth/NewPassword';
+import NewCategory from './components/project/NewCategory';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route exact  path="/userlogin" element={<UserLogin />} />
           <Route exact  path="/userregister" element={<UserRegister />} />
           <Route exact  path="/recoverypassword" element={<RecoveryPassword />} />
+          <Route exact  path="/newcategory" element={<NewCategory />} />
       </Routes>
       </Container>
       <Footer/>

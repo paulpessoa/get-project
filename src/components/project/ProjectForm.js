@@ -9,19 +9,26 @@ import styles from './ProjectForm.module.css';
 function ProjectForm ({handleSubmit, btnText, projectData}) {
     const [categories, setCategories] = useState ([])
     const [project, setProject] = useState(projectData || {})
-    
+    const userToken = '62a4be785cb18ac2b0cad916'
+    sessionStorage.setItem('userToken', userToken)
+
     useEffect(() => {     
-        fetch('http://localhost:5000/categories',{
+        fetch('https://project-api-manager.herokuapp.com/categories',{
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
-            },
+                'x-access-token': sessionStorage.getItem('userToken')   
+            }
         })
         .then((resp) => resp.json())
         .then((data) => {
             setCategories(data)
         })
-        .catch((err) => console.log("vixe"))
+        .catch((err) => {
+            console.log(err)
+            console.log('poxa vda')
+        })
+        
     }, [])
 
 

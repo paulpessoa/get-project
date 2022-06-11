@@ -1,6 +1,3 @@
-import Input from '../form/Input';
-import SubmitButton from '../form/SubmitButton';
-import styles from './ProjectForm.module.css';
 
 function UserRegister () {  
 
@@ -8,11 +5,7 @@ function UserRegister () {
     return (
         <>
         <h2>New User Register</h2>
-        <form className={styles.form}>
-            <Input type="text" text="Nome do Projeto" name="name" placeholder="Insira o nome do Projeto" handleOnChange={handleChange} value={project.name ? project.name : ''} required/> 
-            <Input type="number" text="Orçamento do Projeto" name="budget" placeholder="Insira o orçamento total"  handleOnChange={handleChange} value={project.budget ? project.budget : ''}/>
-            <SubmitButton type="submit" />
-        </form>
+
         </>
     )
 }

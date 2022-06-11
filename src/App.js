@@ -10,6 +10,10 @@ import Container from './components/layout/Container';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import Project from './components/pages/Project';
+import UserRegister from './components/auth/UserRegister';
+import UserLogin from './components/auth/UserLogin';
+import RecoveryPassword from './components/auth/RecoveryPassword';
+import NewPassword from './components/auth/NewPassword';
 
 function App() {
   return (
@@ -23,6 +27,10 @@ function App() {
           <Route exact  path="/contact" element={<Contact />} />
           <Route exact  path="/newproject" element={<NewProject />} />
           <Route exact  path="/project/:id" element={<Project />} />
+          <Route exact  path="/newpassword" element={<NewPassword />} />
+          <Route exact  path="/userlogin" element={<UserLogin />} />
+          <Route exact  path="/userregister" element={<UserRegister />} />
+          <Route exact  path="/recoverypassword" element={<RecoveryPassword />} />
       </Routes>
       </Container>
       <Footer/>

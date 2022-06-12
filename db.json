@@ -163,6 +163,28 @@
       "cost": 0,
       "services": [],
       "id": 9
+    },
+    {
+      "category": {
+        "id": "Categoria 3",
+        "name": "Categoria 3"
+      },
+      "name": "novo projeto",
+      "budget": "3333333",
+      "cost": 0,
+      "services": [],
+      "id": 10
+    },
+    {
+      "name": "dade",
+      "budget": "1452",
+      "category": {
+        "id": "UX/UI",
+        "name": "UX/UI"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 11
     }
   ],
   "categories": [

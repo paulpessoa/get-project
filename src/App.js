@@ -1,5 +1,7 @@
-import React from 'react';
+import React { useState} from 'react';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+
+
 import Home from './components/pages/Home'
 import Company from './components/pages/Company'
 import NewProject from './components/pages/NewProject'
@@ -15,8 +17,16 @@ import UserLogin from './components/auth/UserLogin';
 import RecoveryPassword from './components/auth/RecoveryPassword';
 import NewPassword from './components/auth/NewPassword';
 import NewCategory from './components/project/NewCategory';
+import { useState } from 'react';
 
 function App() {
+
+  const [user, setUser] = useState ({
+    id: 1,
+    name: 'Pedro',
+    avatar: ''
+  });
+
   return (
     <Router>
       <Navbar/>

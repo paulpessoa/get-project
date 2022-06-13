@@ -16,6 +16,10 @@ In Bootstrap Icons, you can run:
 
 ### `npm i bootstrap-icons`
 
+FIREBASE, you can run:
+
+### `npm install firebase`
+
 In the project directory, you can run:
 
 ### `npm start`

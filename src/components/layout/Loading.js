@@ -1,3 +1,4 @@
+import React from 'react';
 import loading from '../../img/Spinner-1s-200px.svg'
 import styles from './Loading.module.css'
 

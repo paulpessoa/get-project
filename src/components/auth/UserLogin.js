@@ -1,3 +1,4 @@
+import React from 'react';
 import logo from '../../img/getprojectlogo.png';
 
 import Input from '../form/Input';
@@ -8,7 +9,10 @@ import {FcGoogle} from 'react-icons/fc'
 import { Link } from 'react-router-dom';
 
 function UserLogin () {  
-
+    function logado() {
+        sessionStorage.setItem('userToken', 'logado')
+        window.location = '/home'
+    }
 // variável que salva TOKEN no sessionStorage
 
     return (
@@ -18,12 +22,12 @@ function UserLogin () {
                     <form className={styles.form}>
                         <Input type="mail" placeholder="E-mail" name="mail"/> 
                         <Input type="password" placeholder="Senha" name="password"/>
-                        <SubmitButton type="submit" text="Acessar"/>
+                        <SubmitButton type="" text="Acessar"/>
                         <br></br>
-                        <spam className={styles.login_link}>
+                        <span className={styles.login_link}>
                             <Link to="/recoverypassword"> Recuperar </Link>
                             senha
-                        </spam> 
+                        </span> 
                         
                         <br></br>
                         <div className={styles.login_buttons}>           
@@ -34,11 +38,13 @@ function UserLogin () {
                             <FcGoogle/> Google
                             </button>
                         </div>
-                        <spam className={styles.login_link}>
+                        <span className={styles.login_link}>
                             Ainda não tenho
                             <Link to="/userregister"> Cadastro</Link>
-                        </spam> 
+                        </span> 
                     </form>
+                        <button onClick={logado} className={styles.button_login_facebook}>ACESSAR DEMO
+                        </button>
                     </div>
                 </div>
 

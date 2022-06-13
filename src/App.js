@@ -1,12 +1,12 @@
-import React, { useState} from 'react';
+import React from 'react';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 
 
 import Home from './components/pages/Home'
 import Profile from './components/pages/Profile'
 import NewProject from './components/pages/NewProject'
-import Contact from './components/pages/Contact';
-import Projects from './components/pages/Projects';
+import UserLogout from './components/auth/UserLogout'
+import Projects from './components/pages/Projects'
 
 import Container from './components/layout/Container';
 import Navbar from './components/layout/Navbar';
@@ -20,44 +20,48 @@ import NewCategory from './components/project/NewCategory';
 
 
 function App() {
-/*
-  const [user, setUser] = useState(null) ({
-    id: 1,
-    name: 'Pedro',
-    avatar: ''
-  });
-
-
-  if (user === null) {
+  const userValue = 'logado'
+  const userAuth = sessionStorage.setItem('userToken', userValue)
+  console.log(userValue)
+  
+  if (userAuth === 'logado') {
     return (
-      <Login />
+        
+      <Router>
+          <Routes>
+            <Route exact  path="*" element={<UserLogin />} />
+            <Route exact  path="/userlogin" element={<UserLogin />} />
+            <Route exact  path="/userregister" element={<UserRegister />} />
+            <Route exact  path="/recoverypassword" element={<RecoveryPassword />} />
+          </Routes>
+    </Router>
     )
 
-  } 
+  }  else {
 
-  */  
  
- //   <Navbar/>
-// <Container customClass="min-height">
     return (
-      <Router>
-      <Routes>
-          <Route exact  path= "/" element={<Home />} />
-          <Route exact  path= "/projects" element={<Projects />} />
-          <Route exact  path="/profile" element={<Profile />} />
-          <Route exact  path="/contact" element={<Contact />} />
-          <Route exact  path="/newproject" element={<NewProject />} />
-          <Route exact  path="/project/:id" element={<Project />} />
-          <Route exact  path="/newpassword" element={<NewPassword />} />
-          <Route exact  path="/userlogin" element={<UserLogin />} />
-          <Route exact  path="/userregister" element={<UserRegister />} />
-          <Route exact  path="/recoverypassword" element={<RecoveryPassword />} />
-          <Route exact  path="/newcategory" element={<NewCategory />} />
-      </Routes>
+    <Router>
+      <Navbar/>
+        <Container customClass="min-height">
+          <Routes>
+            <Route exact  path= "/" element={<Home />} />
+            <Route exact  path= "*" element={<Home />} />
+            <Route exact  path= "/projects" element={<Projects />} />
+            <Route exact  path="/profile" element={<Profile />} />
+            <Route exact  path="/userlogout" element={<UserLogout />} />
+            <Route exact  path="/newproject" element={<NewProject />} />
+            <Route exact  path="/project/:id" element={<Project />} />
+            <Route exact  path="/newpassword" element={<NewPassword />} />
+            <Route exact  path="/userregister" element={<UserRegister />} />
+            <Route exact  path="/recoverypassword" element={<RecoveryPassword />} />
+            <Route exact  path="/newcategory" element={<NewCategory />} />
+          </Routes>
+        </Container>
+      <Footer/>
     </Router>
   );
 }
-//<Footer/>
-//</Container>
+}
 
 export default App;

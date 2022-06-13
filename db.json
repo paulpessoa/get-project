@@ -1,24 +1,6 @@
 {
   "projects": [
     {
-      "name": "Site da Budega",
-      "budget": "1250",
-      "category": {
-        "id": "200",
-        "name": "Desenvolvimento"
-      },
-      "cost": 777,
-      "services": [
-        {
-          "name": "novo servico novo servico novo servico novo servico",
-          "description": "novo servico novo servico novo servico novo servico novo servico",
-          "cost": "777",
-          "id": "dc448e72-47e9-4dc5-8b86-1ec449b0de6b"
-        }
-      ],
-      "id": 1
-    },
-    {
       "name": "Web Template PWA",
       "budget": "1200",
       "category": {
@@ -95,47 +77,6 @@
       "id": 5
     },
     {
-      "name": "Site Institucional",
-      "budget": "1700",
-      "category": {
-        "id": "6",
-        "name": "Planejamento"
-      },
-      "cost": 1650,
-      "services": [
-        {
-          "name": "Design System",
-          "cost": "650",
-          "description": "Feito pelo Desg especialista",
-          "id": "c0e660e5-3319-49e5-bcd0-3fb7d93c7f7e"
-        },
-        {
-          "name": "Contratação de Hospedagem",
-          "cost": "300",
-          "description": "Escolher a melhor do mercado",
-          "id": "a6c8f3d7-9d21-4ca5-b383-00748a22be08"
-        },
-        {
-          "name": "Contratação de Dev Full Stack",
-          "cost": "700",
-          "description": "Dev Jr para ser auxiliado",
-          "id": "adcffe3c-7656-4c1d-b37e-be3e44774b34"
-        }
-      ],
-      "id": 6
-    },
-    {
-      "name": "O mundo é pequeno",
-      "budget": "1700",
-      "category": {
-        "id": "6",
-        "name": "Planejamento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 7
-    },
-    {
       "name": "Vamos aprender juntos",
       "budget": "1700",
       "category": {
@@ -174,17 +115,6 @@
       "cost": 0,
       "services": [],
       "id": 10
-    },
-    {
-      "name": "dade",
-      "budget": "1452",
-      "category": {
-        "id": "UX/UI",
-        "name": "UX/UI"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 11
     }
   ],
   "categories": [

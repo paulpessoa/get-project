@@ -1,3 +1,4 @@
+import React from 'react';
 import logo from '../../img/getprojectlogo.png';
 
 import Input from '../form/Input';
@@ -22,7 +23,7 @@ function UserRegister () {
                     <Input type="password" placeholder="Confirmar Senha" name="password_confirm"/>
                     <SubmitButton type="submit" text="Cadastrar"/>
                     <br></br>
-                    <spam>Realize o cadastro com</spam>
+                    <span>Realize o cadastro com</span>
                     <br></br>
                     <div className={styles.login_buttons}>           
                     <button className={styles.button_login_facebook}>
@@ -32,10 +33,10 @@ function UserRegister () {
                         <FcGoogle/> Google
                         </button>
                     </div>
-                    <spam className={styles.login_link}>
+                    <span className={styles.login_link}>
                         
                         <Link to="/userlogin"> Acesse</Link>
-                    </spam> 
+                    </span> 
                 </form>
         </div>
     </div>

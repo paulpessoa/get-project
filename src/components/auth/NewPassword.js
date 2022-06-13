@@ -1,3 +1,4 @@
+import React from 'react';
 import logo from '../../img/getprojectlogo.png';
 
 import Input from '../form/Input';
@@ -19,7 +20,7 @@ function NewPassword () {
                     <Input type="password" placeholder="Confirmar Senha" name="password_confirm"/>
                     <SubmitButton type="submit" text="Confirmar"/>
                     <br></br>
-                    <spam>Acesse com</spam>
+                    <span>Acesse com</span>
                     <br></br>
                     <div className={styles.login_buttons}>           
                     <button className={styles.button_login_facebook}>

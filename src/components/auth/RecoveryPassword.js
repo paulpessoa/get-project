@@ -1,15 +1,13 @@
+import React from 'react';
 import logo from '../../img/getprojectlogo.png';
 
 import Input from '../form/Input';
 import SubmitButton from '../form/SubmitButton';
 import styles from '../project/ProjectForm.module.css';
-import {BsFacebook} from 'react-icons/bs'
-import {FcGoogle} from 'react-icons/fc'
 import { Link } from 'react-router-dom';
+import Message from '../layout/Message';
 
 function RecoveryPassword () {  
-
-// variável que salva TOKEN no sessionStorage
 
     return (
     <div className={styles.Login}>
@@ -19,14 +17,13 @@ function RecoveryPassword () {
                     <Input type="mail" placeholder="E-mail" name="mail"/> 
                     <SubmitButton type="submit" text="Recuperar senha "/>
                     <br></br>
-                    <spam>Lembrou?</spam>
+                    <span>Lembrou?</span>
                     <br></br>
-                   
-                    <spam className={styles.login_link}>
-                        
+                    <span className={styles.login_link}>
                         <Link to="/userlogin"> Acesse</Link>
-                    </spam> 
+                    </span> 
                 </form>
+                <Message msg="Verifique seu e-mail"/>
         </div>
     </div>
     )

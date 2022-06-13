@@ -3,9 +3,9 @@ import React from "react";
 function UserLogout () {
 
     function Sair() {
-        sessionStorage.setItem('userToken', 'logout')
+        sessionStorage.clear('userToken', '62a4bcbd0e46e071d7')
         alert('Você será desconectado')
-        window.location = '/userlogin'
+        window.location = '/newproject'
     }
     return (
         <div>

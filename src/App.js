@@ -18,13 +18,8 @@ import RecoveryPassword from './components/auth/RecoveryPassword';
 import NewPassword from './components/auth/NewPassword';
 import NewCategory from './components/project/NewCategory';
 
-
-function App() {
-  const userValue = 'logado'
-  const userAuth = sessionStorage.setItem('userToken', userValue)
-  console.log(userValue)
-  
-  if (userAuth === 'logado') {
+function App() {  
+  if (sessionStorage.getItem("userToken") !== '62a4bcbd0e46e071d7') {
     return (
         
       <Router>

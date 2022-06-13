@@ -8,10 +8,14 @@ import {BsFacebook} from 'react-icons/bs'
 import {FcGoogle} from 'react-icons/fc'
 import { Link } from 'react-router-dom';
 
-function UserLogin () {  
+function UserLogin () {
+    
+    
     function logado() {
-        sessionStorage.setItem('userToken', 'logado')
-        window.location = '/home'
+        sessionStorage.setItem("userToken", "62a4bcbd0e46e071d7");  
+        var psw = sessionStorage.getItem("userToken");
+        console.log(psw)
+        window.location = '/projects'
     }
 // variável que salva TOKEN no sessionStorage
 
@@ -20,9 +24,9 @@ function UserLogin () {
             <div className={styles.div1}>
                 <img className={styles.logo} src={logo} alt="Get-Project" />
                     <form className={styles.form}>
-                        <Input type="mail" placeholder="E-mail" name="mail"/> 
-                        <Input type="password" placeholder="Senha" name="password"/>
-                        <SubmitButton type="" text="Acessar"/>
+                        <Input type="mail" placeholder="E-mail" id="key" name="mail"/> 
+                        <Input type="password" placeholder="Senha" id="psw" name="password"/>
+                        <SubmitButton type="submit" text="Acessar"/>
                         <br></br>
                         <span className={styles.login_link}>
                             <Link to="/recoverypassword"> Recuperar </Link>

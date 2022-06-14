@@ -1,4 +1,4 @@
-# Get Project - Application Web
+# Get Project - Web Application
 <a href="https://get-project.vercel.app/" target="_blank"><img src="./src/img/land1.png" alt="Get Project Page Preview"/></a>
 
 <a href="https://get-project.vercel.app/" target="_blank"><img src="./src/img/land2.png" alt="Get Project Page Preview"/></a>

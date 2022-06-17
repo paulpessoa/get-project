@@ -9,7 +9,9 @@ import {FcGoogle} from 'react-icons/fc'
 import { Link } from 'react-router-dom';
 
 function UserLogin () {
-    
+    var inputMail = document.getElementById('key')
+    var inputPsw = document.getElementById('psw')
+    var loginEmailButton = document.getElementById('loginEmailButton')
     
     function logado() {
         sessionStorage.setItem("userToken", "62a4bcbd0e46e071d7");  
@@ -26,7 +28,7 @@ function UserLogin () {
                     <form className={styles.form}>
                         <Input type="mail" placeholder="E-mail" id="key" name="mail"/> 
                         <Input type="password" placeholder="Senha" id="psw" name="password"/>
-                        <SubmitButton type="submit" text="Acessar"/>
+                        <SubmitButton type="submit" id='loginEmailButton' text="Acessar"/>
                         <br></br>
                         <span className={styles.login_link}>
                             <Link to="/recoverypassword"> Recuperar </Link>
@@ -47,7 +49,7 @@ function UserLogin () {
                             <Link to="/userregister"> Cadastro</Link>
                         </span> 
                     </form>
-                        <button onClick={logado} className={styles.button_login_facebook}>ACESSAR DEMO
+                        <button  onClick={logado} className={styles.button_login_facebook}>ACESSAR DEMO
                         </button>
                     </div>
                 </div>

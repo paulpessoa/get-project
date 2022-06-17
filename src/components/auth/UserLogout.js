@@ -3,7 +3,7 @@ import React from "react";
 function UserLogout () {
 
     function Sair() {
-        sessionStorage.clear('userToken', '62a4bcbd0e46e071d7')
+        sessionStorage.clear('userToken')
         alert('Você será desconectado')
         window.location = '/newproject'
     }

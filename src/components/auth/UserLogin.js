@@ -1,4 +1,7 @@
 //https://www.youtube.com/watch?v=_Kv965pA-j8&t=32s
+//https://www.youtube.com/watch?v=s_Txhh-clVk
+//https://www.youtube.com/watch?v=unr4s3jd9qA&t=452s
+
 
 import React, { useRef, useState } from 'react';
 import logo from '../../img/getprojectlogo.png';

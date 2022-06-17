@@ -1,18 +1,34 @@
-import React from 'react';
+//https://www.youtube.com/watch?v=_Kv965pA-j8&t=32s
+
+import React, { useRef, useState } from 'react';
 import logo from '../../img/getprojectlogo.png';
 
-import Input from '../form/Input';
-import SubmitButton from '../form/SubmitButton';
+import { signup } from '../../firebase';
+
+
 import styles from '../project/ProjectForm.module.css';
 import {BsFacebook} from 'react-icons/bs'
 import {FcGoogle} from 'react-icons/fc'
 import { Link } from 'react-router-dom';
 
 function UserLogin () {
-    var inputMail = document.getElementById('key')
-    var inputPsw = document.getElementById('psw')
-    var loginEmailButton = document.getElementById('loginEmailButton')
+    const [loading, setLoading] = useState(false)
+    const emailRef = useRef()
+    const passwordRef = useRef()
+
+    async function handleSignup() {
+
+        setLoading(true)
+        try {
+            await signup(emailRef.current.value, passwordRef.current.value)
+        } catch {
+            alert("Este email já esta cadastrado")
+        }
+        setLoading(false)
+
     
+    }
+
     function logado() {
         sessionStorage.setItem("userToken", "62a4bcbd0e46e071d7");  
         var psw = sessionStorage.getItem("userToken");
@@ -20,15 +36,15 @@ function UserLogin () {
         window.location = '/projects'
     }
 // variável que salva TOKEN no sessionStorage
-
     return (
         <div className={styles.Login}>
             <div className={styles.div1}>
+                        <input ref={emailRef} type="mail" placeholder="E-mail" id="key" name="mail"/> 
+                        <input ref={passwordRef} type="password" placeholder="Senha" id="psw" name="password"/>
+                        <button disabled={loading} onClick={handleSignup}>signup</button>
                 <img className={styles.logo} src={logo} alt="Get-Project" />
                     <form className={styles.form}>
-                        <Input type="mail" placeholder="E-mail" id="key" name="mail"/> 
-                        <Input type="password" placeholder="Senha" id="psw" name="password"/>
-                        <SubmitButton type="submit" id='loginEmailButton' text="Acessar"/>
+                         
                         <br></br>
                         <span className={styles.login_link}>
                             <Link to="/recoverypassword"> Recuperar </Link>

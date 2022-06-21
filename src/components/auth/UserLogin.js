@@ -24,6 +24,7 @@ function UserLogin () {
         setLoading(true)
         try {
             await signup(emailRef.current.value, passwordRef.current.value)
+            alert('Conta criada com sucesso')
         } catch {
             alert("Este email já esta cadastrado")
         }
@@ -42,13 +43,18 @@ function UserLogin () {
     return (
         <div className={styles.Login}>
             <div className={styles.div1}>
-                        <input ref={emailRef} type="mail" placeholder="E-mail" id="key" name="mail"/> 
-                        <input ref={passwordRef} type="password" placeholder="Senha" id="psw" name="password"/>
-                        <button disabled={loading} onClick={handleSignup}>signup</button>
                 <img className={styles.logo} src={logo} alt="Get-Project" />
-                    <form className={styles.form}>
+                    <form className={styles.forms}>
                          
-                        <br></br>
+                        <input ref={emailRef} type="mail" placeholder="E-mail" id="key" name="mail"/> 
+                        <br/>
+                        <input ref={passwordRef} type="password" placeholder="Senha" id="psw" name="password"/>
+                        <br/>
+                        <button className={styles.btn} disabled={loading} onClick={handleSignup}>Acessar</button>
+                        <br/>
+                        <br/>
+                        
+                        
                         <span className={styles.login_link}>
                             <Link to="/recoverypassword"> Recuperar </Link>
                             senha
